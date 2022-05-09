@@ -6,26 +6,26 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.ranawat.brochill_assignment.databinding.ActivityMainBinding;
+import com.ranawat.brochill_assignment.databinding.ActivityHomeScreenBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeScreenActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding;
+    private ActivityHomeScreenBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding=ActivityMainBinding.inflate(getLayoutInflater());
+        binding=ActivityHomeScreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
         getSupportActionBar().hide();
 
-
-        binding.getStart.setOnClickListener(new View.OnClickListener() {
+        binding.btnAddTweet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this, RegisterActivity.class);
+                Intent intent=new Intent(HomeScreenActivity.this, TweetScreenActivity.class);
                 startActivity(intent);
-                finish();
+
             }
         });
     }

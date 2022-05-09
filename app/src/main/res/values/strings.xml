@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Brochill_Assignment</string>
-    <string name="local_is_the_new_global_n_india_s_biggest_localizes_content">Local is the new Global /n India\'s biggest localizes content</string>
+    <string name="local_is_the_new_global_n_india_s_biggest_localizes_content">Local is the new Global India\'s biggest localizes content</string>
+    <string name="start">Start</string>
 </resources>

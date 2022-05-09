@@ -4,26 +4,26 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 
-import com.ranawat.brochill_assignment.databinding.ActivityMainBinding;
+import com.ranawat.brochill_assignment.databinding.ActivityLoginBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding;
+    private ActivityLoginBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding=ActivityMainBinding.inflate(getLayoutInflater());
+        binding=ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         getSupportActionBar().hide();
 
-
-        binding.getStart.setOnClickListener(new View.OnClickListener() {
+        binding.btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this, RegisterActivity.class);
+                Intent intent=new Intent(LoginActivity.this, HomeScreenActivity.class);
                 startActivity(intent);
                 finish();
             }

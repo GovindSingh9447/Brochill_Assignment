@@ -6,27 +6,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.ranawat.brochill_assignment.databinding.ActivityMainBinding;
+import com.ranawat.brochill_assignment.databinding.ActivityRegisterBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding;
+    private ActivityRegisterBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding=ActivityMainBinding.inflate(getLayoutInflater());
+        binding=ActivityRegisterBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         getSupportActionBar().hide();
 
-
-        binding.getStart.setOnClickListener(new View.OnClickListener() {
+        binding.btnReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this, RegisterActivity.class);
+                Intent intent=new Intent(RegisterActivity.this,LoginActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
+
     }
 }

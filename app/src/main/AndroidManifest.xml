@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Brochill_Assignment">
         <activity
+            android:name=".HomeScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TweetScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

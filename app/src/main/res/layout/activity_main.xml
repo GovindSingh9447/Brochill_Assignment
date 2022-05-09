@@ -21,10 +21,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_marginStart="21dp"
-            android:textSize="25dp"
-            android:layout_marginTop="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
             android:text="Welcome"
             android:textColor="@color/white"
+            android:textSize="25dp"
             android:textStyle="bold" />
 
     </RelativeLayout>
@@ -33,26 +34,28 @@
         android:id="@+id/getStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="178dp"
         android:layout_marginEnd="142dp"
         android:layout_marginBottom="94dp"
         android:background="@drawable/shape_btn01"
         android:gravity="center"
-        android:text="Get Start"
+        android:text="@string/start"
         android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/getStart"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="57dp"
-        android:text="@string/local_is_the_new_global_n_india_s_biggest_localizes_content" />
+        android:layout_marginBottom="149dp"
+        android:text="@string/local_is_the_new_global_n_india_s_biggest_localizes_content"
+        android:textAlignment="center"
+        android:textSize="25dp" />
 
     <ImageView
         android:id="@+id/imageView"

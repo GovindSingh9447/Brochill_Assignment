@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/etF_name"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:textColorHint="#281D1D"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etL_name"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:textColorHint="#281D1D"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textColorHint="#281D1D"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:hint="**********"
+        android:textColorHint="#281D1D"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:text="Next"
+        android:textSize="24dp"/>
+
+
+</LinearLayout>
