@@ -46,8 +46,6 @@ public class RegisterActivity extends AppCompatActivity {
         email =binding.etEmail.getText().toString().trim();
         password =binding.etPassword.getText().toString().trim();
 
-
-
         //vaildate data
         if(TextUtils.isEmpty(first_name)){
             Toast.makeText(RegisterActivity.this, "Enter First name.....", Toast.LENGTH_SHORT).show();
